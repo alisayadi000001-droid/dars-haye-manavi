@@ -11,12 +11,12 @@ plugins {
 
 android {
   namespace = "com.aistudio.spirituallessons.vnmqlz"
-  compileSdk = 35
+  compileSdk = 37
 
   defaultConfig {
     applicationId = "com.aistudio.spirituallessons.vnmqlz"
     minSdk = 24
-    targetSdk = 35
+    targetSdk = 36
     versionCode = 1
     versionName = "1.0"
 
