@@ -1,0 +1,6 @@
+{
+  "name": "درس‌های معنوی",
+  "description": "اپلیکیشن جامع و آرامش‌بخش درس‌ها و آموزه‌های معنوی، همراه با مراقبه، تأملات روزانه و مدیریت محتوا",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
