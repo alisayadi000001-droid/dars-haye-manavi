@@ -15,6 +15,14 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK Platform
+        run: |
+          sdkmanager "platforms;android-35"
+          sdkmanager "build-tools;35.0.0"
+
       - name: Remove Google Services plugin
         run: |
           find . -name "build.gradle.kts" -exec sed -i '/google-services/d' {} \;
@@ -22,7 +30,7 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
-      - run: gradle assembleDebug
+      - run: ./gradlew assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:
