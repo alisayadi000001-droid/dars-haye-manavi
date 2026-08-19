@@ -10,14 +10,13 @@ plugins {
 }
 
 android {
-  // اصلاح پکیج‌نیم اصلی برای هماهنگی کامل با applicationId و جلوگیری از crash
   namespace = "com.aistudio.spirituallessons.vnmqlz"
-  compileSdk = 34
+  compileSdk = 35
 
   defaultConfig {
     applicationId = "com.aistudio.spirituallessons.vnmqlz"
     minSdk = 24
-    targetSdk = 34
+    targetSdk = 35
     versionCode = 1
     versionName = "1.0"
 
