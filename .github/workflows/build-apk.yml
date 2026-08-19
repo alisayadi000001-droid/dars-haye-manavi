@@ -20,6 +20,12 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
+      - name: Ensure google-services.json exists
+        run: |
+          if [ ! -f app/google-services.json ]; then
+            echo '{"project_info":{"project_id":"placeholder"},"client":[]}' > app/google-services.json
+          fi
+
       - name: Build Debug APK
         run: gradle assembleDebug
 
